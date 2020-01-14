@@ -31,8 +31,8 @@
 
 - 함수형 프로그래밍(functional programming) 지원[JDK8/JDK1.8]
     - 람다식
-        - 필터링
-        - 매핑
+        - filtering
+        - mapping
         - 집계
     - 변수 값이 변하지 않고 처리됨
     - 한방향으로 진행된다.
