@@ -5,7 +5,7 @@
 
 ## Download
 - [IDE](https://github.com/donghaeum/java/wiki/IDE)
-	- [eclipse](https://github.com/donghaeum/java/wiki/Theme)
+	- [eclipse](https://github.com/donghaeum/java/wiki/Eclipse)
 - [JDK](https://github.com/donghaeum/java/wiki/JDK)
 
 
