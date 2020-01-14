@@ -5,10 +5,10 @@
 
 ## Download
 - [IDE (Integration Development Environment, tool)](https://github.com/donghaeum/java/wiki/IDE)
-
+	- [eclipse theme 적용](https://github.com/donghaeum/java/wiki/Theme)
 - [IDK](https://github.com/donghaeum/java/wiki/IDK)
 
-- [eclipse theme 적용](https://github.com/donghaeum/java/wiki/Theme)
+
 
 ### 자바 동작원리
 * one source multise
