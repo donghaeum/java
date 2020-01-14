@@ -299,7 +299,7 @@ class Student extends People(
 - 상속이 되는 의미는 is 관계이다.
 ```
 Student is People이 true 인 관계이다. 
-(자식)	 	 (부모)
+(자식)	 (부모)
 ```
 
 ### class(클래스)
