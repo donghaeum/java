@@ -4,7 +4,7 @@
 - JAVA Review Documents
 
 ## Download
-- [IDE (Integration Development Environment, tool)](https://github.com/donghaeum/java/wiki/IDE)
+- [IDE](https://github.com/donghaeum/java/wiki/IDE)
 	- [eclipse theme 적용](https://github.com/donghaeum/java/wiki/Theme)
 - [IDK](https://github.com/donghaeum/java/wiki/IDK)
 
