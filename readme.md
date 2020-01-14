@@ -155,9 +155,9 @@ int cup2;
 - 객체를 생성하는 이유? 객체를 사용하기 위해서
 - 객체를 생성하는 방법
 ```
-      CoffeeMachine   cm    = new CoffeeMachine();
-                     주소값
-                   (참조변수)
+CoffeeMachine   cm    = new CoffeeMachine();
+               주소값
+             (참조변수)
 ```
 - 참조변수는 그 자체가 값이 아니기 때문에 어떤식으로든 가공을 해야한다.
 - 예를들면, cm.coffeeMake(); 처럼 만들어진 메소드를 호출해야 내가 작성한 메세지가 출력이 된다.
@@ -257,9 +257,9 @@ public class B(
 
 member field에 값을 선언하지 않으면 참조차입은 null로 초기화가 되고, 기본타입은 기본타입의 기본값으로 초기화가 된다.
 ```
-	class A(
-		int sum; // member field, 전역 변수
-		// sum = 0;
+class A(
+	int sum; // member field, 전역 변수
+		 // sum = 0;
 	)
 ```
 
@@ -267,24 +267,24 @@ member field에 값을 선언하지 않으면 참조차입은 null로 초기화�
 
 - member field private, member method public
 ```
-	class People{
-		private in age;
-		public void setAge(int age){
-			this.age = age;
-		}
-		public int getAge(){
-			return age;
-		}
+class People{
+	private in age;
+	public void setAge(int age){
+		this.age = age;
 	}
+	public int getAge(){
+		return age;
+	}
+}
 ```
 ```
-	class Main{
-		public static void main(String[] args){
-			People p = new People();
-			p.age = 10; // X
-			p.getAge(); // O
-		}
+class Main{
+	public static void main(String[] args){
+		People p = new People();
+		p.age = 10; // X
+		p.getAge(); // O
 	}
+}
 ```
 
 ### 상속성(inheritance)
@@ -292,14 +292,14 @@ member field에 값을 선언하지 않으면 참조차입은 null로 초기화�
 - 상속 키워드 extends
 	자식 클래스 extends 부모 클래스
 ```
-	  class Student extends People(
-	  	...
-	  )
+class Student extends People(
+	  ...
+)
 ```
 - 상속이 되는 의미는 is 관계이다.
 ```
-    Student is People이 true 인 관계이다. 
-    (자식)	 	 (부모)
+Student is People이 true 인 관계이다. 
+(자식)	 	 (부모)
 ```
 
 ### class(클래스)
@@ -321,39 +321,39 @@ member field에 값을 선언하지 않으면 참조차입은 null로 초기화�
 
 ### if문
 ```
-	- if(조건식){
-		// 조건식이 참일 경우 실행되는 문장
-	  }
-	  else{
-	  	// 조건식이 거짓일 경우 실행되는 문장
-	  }
+- if(조건식){
+	// 조건식이 참일 경우 실행되는 문장
+}
+else{
+	// 조건식이 거짓일 경우 실행되는 문장
+}
 ```
 ```
-	- if(조건식1){
-	 	조건식1이 만족할 경우 실행되는 문장
-	  }
-	  else if(조건식2){
-	  	조건식2가 만족할 경우 실행되는 문장
-	  }
-	  else{
-	  	조건식1도 만족 X, 조건식2도 만족 못할 경우 실행되는 문장
-	  }
+- if(조건식1){
+	조건식1이 만족할 경우 실행되는 문장
+}
+else if(조건식2){
+	조건식2가 만족할 경우 실행되는 문장
+}
+else{
+	조건식1도 만족 X, 조건식2도 만족 못할 경우 실행되는 문장
+}
 ```
 ```
-	- if(조건식){
-		조건식이 만족할 경우 실행하는 문장
-	  }
-	  조건식이 만족하지 않을 경우에는 여기가 실행
+- if(조건식){
+	조건식이 만족할 경우 실행하는 문장
+}
+조건식이 만족하지 않을 경우에는 여기가 실행
 ```
 
 local variable(지역변수)은 초기값을 설정해 주어야 한다.
 ```
-	public void localVar(){
-		int a;
-		int b =10;
-		int c = b+a; // a는 오류가 발생 한다.
-					 // a에 초기값을 지정해 줘야한다.
-	}
+public void localVar(){
+	int a;
+	int b =10;
+	int c = b+a; // a는 오류가 발생 한다.
+		     // a에 초기값을 지정해 줘야한다.
+}
 ```
 
 ### String class(문자열 클래스)
