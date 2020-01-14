@@ -197,8 +197,8 @@ C:\Program Files\ojdkbuild\java-1.8.0-openjdk-1.8.0.232-2\jre\bin
 참조타입은 reference를 주고 reference를 받는다.
 
 - pass by value
-  - assign by value
-  - immutable
+- assign by value
+- immutable
 ```
 int a = 10;
 int b = a; // a->b
@@ -207,8 +207,8 @@ System.out.println(a); // 10 값이 변하지 않는다.
                        // a값이 변하려면 재할당을 해야한다.
 ```
 - pass by reference
-  - assign by reference
-  - mutable
+- assign by reference
+- mutable
 ```
 int[] c = {1,2,3,4,5};
 int[] d = new int[5];
@@ -229,11 +229,11 @@ p.setName(String name); // P클래스에 name 이라는 변수로 값을 넣어�
 ```
 private		- : 같은 클래스 내에서만 접근 가능
 (default)	  : 같은 패키지 내에서만 접근 가능
-protected	# : 상속 O public, 상소 X default
+protected	# : 상속 O public, 상속 X default
 public		+ : 모든 곳에서 접근이 가능
 ```
 ```
-package.com.medici.testa;
+package com.medici.testa;
 public class A(
 	private in money = 10;
 	public void sendMoney(){
@@ -242,7 +242,7 @@ public class A(
 )
 ```
 ```
-package.com.medici.testb;
+package com.medici.testb;
 public class B(
 	int money2 = 20;
 	void getMoney(){
@@ -251,9 +251,9 @@ public class B(
 )
 ```
 ### OOP의 3대 특징
-- 은닉성(encapsulation) : member field private, member method private
-- 상속성(inheritance) : 부모에 있는 member를 물려 받는 것
-- 다형성(polymorphism) : 다양한 형태를 나타내는 성질, 부모에 있는 메소드가 자식의 형태에 따라 다양하게 호출되는 것
+- 은닉성(encapsulation) 	: member field private, member method private
+- 상속성(inheritance) 	: 부모에 있는 member를 물려 받는 것
+- 다형성(polymorphism) 	: 다양한 형태를 나타내는 성질, 부모에 있는 메소드가 자식의 형태에 따라 다양하게 호출되는 것
 
 member field에 값을 선언하지 않으면 참조차입은 null로 초기화가 되고, 기본타입은 기본타입의 기본값으로 초기화가 된다.
 ```
@@ -299,14 +299,14 @@ class Student extends People(
 - 상속이 되는 의미는 is 관계이다.
 ```
 Student is People이 true 인 관계이다. 
-(자식)	 (부모)
+(자식)	   (부모)
 ```
 
 ### class(클래스)
 - 속성(attribute)과 행위(method)가 들어 있는 설계도
 - 설계도, 붕어빵 틀
 - 블루프린트(청사진)
-- java
+- .java
 
 ### Object(.class)
 - instance, 오브젝트, 객체
