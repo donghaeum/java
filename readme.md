@@ -198,7 +198,7 @@ C:\Program Files\ojdkbuild\java-1.8.0-openjdk-1.8.0.232-2\jre\bin
 
 - pass by value
   - assign by value
-  - immitable
+  - immutable
 ```
 int a = 10;
 int b = a; // a->b
@@ -227,7 +227,7 @@ p.setName(String name); // P클래스에 name 이라는 변수로 값을 넣어�
 
 ### 접근제한자(access modifier)
 ```
-private		~ : 같은 클래스 내에서만 접근 가능
+private		- : 같은 클래스 내에서만 접근 가능
 (default)	  : 같은 패키지 내에서만 접근 가능
 protected	# : 상속 O public, 상소 X default
 public		+ : 모든 곳에서 접근이 가능
@@ -265,7 +265,7 @@ member field에 값을 선언하지 않으면 참조차입은 null로 초기화�
 
 ### 은닉성(encapsulation)
 
-- member field private, member method private
+- member field private, member method public
 ```
 	class People{
 		private in age;
