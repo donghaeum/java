@@ -11,7 +11,7 @@
 
 
 ### 자바 동작원리
-* one source multise
+* one source multiuse
   
   * 하나의 소스를 만들면 플랫폼에 상관없이 똑같은 결과를 얻을 수 있다.
   * 플랫폼(Operating System, os)
