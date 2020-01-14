@@ -1,19 +1,14 @@
 # JAVA
 
+## Notice
+- JAVA Review Documents
 
-### IDE(Integration Development Environment, tool)
- * eclipse - https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2019-12/R/eclipse-inst-win64.exe
- 
-* intelliIDEA community
-    
-* Visual Studio Code
-    
-### IDK
-  * openjdk : 무료 - https://github.com/ojdkbuild/ojdkbuild / https://jdk.java.net/java-se-ri/8
-  * oraclejdk : 부분 무료, 특정 API를 사용하면 유료
-#### eclipse theme 적용
-  * 테마 다운로드 - http://www.eclipsecolorthemes.org/?view=theme&id=14105
-  * file -> import -> 파일 적용
+## Download
+- [IDE (Integration Development Environment, tool)](https://github.com/donghaeum/java/wiki/IDE)
+
+- [IDK](https://github.com/donghaeum/java/wiki/IDK)
+
+- [eclipse theme 적용](https://github.com/donghaeum/java/wiki/Theme)
 
 ### 자바 동작원리
 * one source multise
