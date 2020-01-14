@@ -5,8 +5,8 @@
 
 ## Download
 - [IDE](https://github.com/donghaeum/java/wiki/IDE)
-	- [eclipse theme 적용](https://github.com/donghaeum/java/wiki/Theme)
-- [IDK](https://github.com/donghaeum/java/wiki/IDK)
+	- [eclipse](https://github.com/donghaeum/java/wiki/Theme)
+- [JDK](https://github.com/donghaeum/java/wiki/JDK)
 
 
 
