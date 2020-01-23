@@ -70,7 +70,7 @@ public class BaccaratGameStart {
 	}
 ```
 
-#### 값을 비교하여 조건에 맞게 결과값 출력
+#### 값을 비교하여 조건에 맞게 결과 값 출력
 ```
 public boolean gameStart(int playercard, int playercard2, int bankercard, int bankercard2) {
 	boolean isT = true;				
