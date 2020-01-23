@@ -172,3 +172,29 @@ public class BacarratCardGame {
 	
 }
 ```
+
+----
+
+### 결과
+
+----
+
+#### player 선택
+
+<img width=600 src=https://github.com/donghaeum/java/blob/master/image/cardgamescanner01.PNG>
+
+#### player로 게임 진행
+
+<img width=600 src=https://github.com/donghaeum/java/blob/master/image/cardgamescanner02.PNG>
+
+#### 재경기
+
+<img width=600 src=https://github.com/donghaeum/java/blob/master/image/cardgamescanner03.PNG>
+
+#### banker로 게임 진행
+
+<img width=600 src=https://github.com/donghaeum/java/blob/master/image/cardgamescanner04.PNG>
+
+#### 게임 종료
+
+<img width=600 src=https://github.com/donghaeum/java/blob/master/image/cardgamescanner05.PNG>
