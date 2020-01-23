@@ -22,6 +22,7 @@
     - Player와 Banker의 카드 합이 5 이하일 경우
       - Player와 Banker 모두 카드를 더 뽑습니다.
       
+- player와 banker의 카드 생성
 ```
 public class BaccaratGameStart {
 	private int[] player_banker = {0, 0, 0};  // player와 banker가 뽑을 수 있는 카드는 최대 3장
@@ -41,7 +42,11 @@ public class BaccaratGameStart {
 		sum = (player_banker[0]+player_banker[1])%10;  // 1의 자리 숫자만 필요하기 때문에 더한 값에서 10으로 나눠준다.
 		sum2 = (sum+player_banker[2])%10;
 	}
+}
+  ```
   
+  - 카드 값
+  ```
   // 카드 한 장의 값
 	public int Cards(int i) {
 		return player_banker[i]; 
@@ -56,86 +61,83 @@ public class BaccaratGameStart {
 	public int getCardSum2() {
 		return sum2;
 	}
+```
 
-  // 어느 쪽이 승리했는지 확인
-	public boolean gameStart(int playercard, int playercard2, int bankercard, int bankercard2) {
-		boolean isT = true;				
-		while(isT) {
+- 값을 비교하여 조건에 맞게 결과값 출력
+```
+public boolean gameStart(int playercard, int playercard2, int bankercard, int bankercard2) {
+	boolean isT = true;				
+	while(isT) {
     
 // player의 카드 합과 banker의 카드 합이  5 이상 일때
       
-			if (playercard>5 && bankercard>5) {  
-				if (playercard>bankercard) {
-					System.out.println("플레이어가 승리하였습니다.");
-				}
-				else if (playercard<bankercard) {
-					System.out.println("딜러가 승리하였습니다.");
-				}
-				else if (playercard==bankercard) {
-					System.out.println("비겼습니다.");
-				}
+		if (playercard>5 && bankercard>5) {  
+			if (playercard>bankercard) {
+				System.out.println("플레이어가 승리하였습니다.");
 			}
+			else if (playercard<bankercard) {
+				System.out.println("딜러가 승리하였습니다.");
+			}
+			else if (playercard==bankercard) {
+				System.out.println("비겼습니다.");
+			}
+		}
       
 // player의 카드 합은 5 이하 banker의 카드 합은 5 이상 일때
       
-			else if (playercard<=5 && bankercard>5) {  
-				System.out.println("플레이어가 카드를 한 장 더 뽑습니다.");
-				System.out.println("\n");
-				System.out.println("플레이어가 뽑은 카드는 "+playercard2+" 입니다.");
-				System.out.println("\n");
-					if (playercard2>bankercard) {
-						System.out.println("플레이어가 승리하였습니다.");
-					}
-					else if (playercard2<bankercard) {
-						System.out.println("딜러가 승리하였습니다.");
-					}
-					else if (playercard2==bankercard) {
-						System.out.println("비겼습니다.");
-					}
-			}
+		else if (playercard<=5 && bankercard>5) {  
+			System.out.println("플레이어가 카드를 한 장 더 뽑습니다.");
+			System.out.println("\n");
+			System.out.println("플레이어가 뽑은 카드는 "+playercard2+" 입니다.");
+			System.out.println("\n");
+				if (playercard2>bankercard) {
+					System.out.println("플레이어가 승리하였습니다.");
+				}
+				else if (playercard2<bankercard) {
+					System.out.println("딜러가 승리하였습니다.");
+				}
+				else if (playercard2==bankercard) {
+					System.out.println("비겼습니다.");
+				}
+		}
       
 // player의 카드 합은 5 이상 banker의 카드 합은 5 이하 일때
       
-			else if (playercard>5 && bankercard<=5) {  
-				System.out.println("딜러가 카드를 한 장 더 뽑습니다.");
-				System.out.println("\n");
-				System.out.println("딜러가 뽑은 카드는 "+bankercard2+" 입니다.");
-				System.out.println("\n");
-					if (playercard>bankercard2) {
-						System.out.println("플레이어가 승리하였습니다.");
-					}
-					else if (playercard<bankercard2) {
-						System.out.println("딜러가 승리하였습니다.");
-					}
-					else if (playercard==bankercard2) {
-						System.out.println("비겼습니다.");
-					}
-			}
+		else if (playercard>5 && bankercard<=5) {  
+			System.out.println("딜러가 카드를 한 장 더 뽑습니다.");
+			System.out.println("\n");
+			System.out.println("딜러가 뽑은 카드는 "+bankercard2+" 입니다.");
+			System.out.println("\n");
+				if (playercard>bankercard2) {
+					System.out.println("플레이어가 승리하였습니다.");
+				}
+				else if (playercard<bankercard2) {
+					System.out.println("딜러가 승리하였습니다.");
+				}
+				else if (playercard==bankercard2) {
+					System.out.println("비겼습니다.");
+				}
+		}
       
 // player의 카드 합과 banker의 카드 합이 모두 5 이하 일때
       
-			else if (playercard<=5 && bankercard<=5) {
-				System.out.println("딜러와 플레이어가 카드를 한 장 더 뽑습니다.");
-				System.out.println("\n");
-				System.out.println("플레이어가 뽑은 카드는 "+playercard2+" 입니다."+"\n"+"딜러가 뽑은 카드는 "+bankercard2+" 입니다.");
-				System.out.println("\n");
-					if (playercard2>bankercard2) {
-						System.out.println("플레이어가 승리하였습니다.");
-					}
-					else if (playercard2<bankercard2) {
-						System.out.println("딜러가 승리하였습니다.");
-					}
-					else if (playercard2==bankercard2) {
-						System.out.println("비겼습니다.");
-					}
-			}
-			isT = false;
-						
-			}
-		return isT;
-		
-		
+		else if (playercard<=5 && bankercard<=5) {
+			System.out.println("딜러와 플레이어가 카드를 한 장 더 뽑습니다.");
+			System.out.println("\n");
+			System.out.println("플레이어가 뽑은 카드는 "+playercard2+" 입니다."+"\n"+"딜러가 뽑은 카드는 "+bankercard2+" 입니다.");
+			System.out.println("\n");
+				if (playercard2>bankercard2) {
+					System.out.println("플레이어가 승리하였습니다.");
+				}
+				else if (playercard2<bankercard2) {
+					System.out.println("딜러가 승리하였습니다.");
+				}
+				else if (playercard2==bankercard2) {
+					System.out.println("비겼습니다.");
+				}
+		}
+		isT = false;				
 	}
-
+	return isT;	
 }
 ```
