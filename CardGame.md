@@ -1,8 +1,13 @@
 # JAVA
 
+
 ## Bacarrat Card Game 만들기
 
-- Bacarrat Card Game Rule
+Java를 이용하여 Bacarrat cardgame을 만들어 봅시다.
+
+----
+
+### Bacarrat Card Game Rule
 
 1) Player와 Banker는 각각 2장의 카드를 받습니다.
 
@@ -22,7 +27,9 @@
     - Player와 Banker의 카드 합이 5 이하일 경우
       - Player와 Banker 모두 카드를 더 뽑습니다.
       
-- player와 banker의 카드 생성
+----
+      
+#### player와 banker의 카드 생성
 ```
 public class BaccaratGameStart {
 	private int[] player_banker = {0, 0, 0};  // player와 banker가 뽑을 수 있는 카드는 최대 3장
@@ -45,7 +52,7 @@ public class BaccaratGameStart {
 }
   ```
   
-  - 카드 값
+  #### 카드 값
   ```
   // 카드 한 장의 값
 	public int Cards(int i) {
@@ -63,7 +70,7 @@ public class BaccaratGameStart {
 	}
 ```
 
-- 값을 비교하여 조건에 맞게 결과값 출력
+#### 값을 비교하여 조건에 맞게 결과값 출력
 ```
 public boolean gameStart(int playercard, int playercard2, int bankercard, int bankercard2) {
 	boolean isT = true;				
@@ -142,7 +149,7 @@ public boolean gameStart(int playercard, int playercard2, int bankercard, int ba
 }
 ```
 
-- 게임 시작하기
+#### 게임 시작하기
 
 ```
 public class BaccaratCardGame {
@@ -190,6 +197,10 @@ public class BaccaratCardGame {
 }
 ```
 
-결과
+----
+
+### 결과 출력하기
+
+----
 
 <img width=600 src=https://github.com/donghaeum/java/blob/master/cardgame.PNG>
