@@ -173,6 +173,266 @@ public class BacarratCardGame {
 }
 ```
 
+#### 카드 만들기
+
+```
+public class BacarratGameStart{
+	private int[] player_banker = {0, 0, 0};
+	private int sum = 0;
+	private int sum2 = 0;
+	public static final int[] num = {1,2,3,4,5,6,7,8,9,0,0,0,0};
+	
+	public BacarratGameStart() {
+		init();
+	}
+```
+
+#### 카드 값 구하기
+
+```
+	public void init() {
+		for (int i = 0; i < 3; i++) {
+			player_banker[i] = num[(int)(Math.random()*num.length)];
+		}
+		sum = (player_banker[0]+player_banker[1])%10;
+		sum2 = (sum+player_banker[2])%10;
+	}
+	public int Cards(int i) {
+		return player_banker[i];
+	}
+	public int getCardSum() {
+		return sum;
+	}
+	
+	public int getCardSum2() {
+		return sum2;
+	}
+```
+
+#### player 측 에서 게임 
+
+```
+	public boolean playerPlay(int playercard, int playercard2, int bankercard, int bankercard2) {
+		boolean isT = true;				
+		while(isT) {
+			if (playercard>5 && bankercard>5) {
+				if (playercard>bankercard) {
+					System.out.println("You Win");
+				}
+				else if (playercard<bankercard) {
+					System.out.println("You Lose");
+				}
+				else if (playercard==bankercard) {
+					System.out.println("Draw");
+				}
+			}
+			
+			else if (playercard<=5 && bankercard>5) {
+				System.out.println("Player draw card \n");
+				
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					System.out.println(e.getMessage());
+				}
+				
+				System.out.println("Player's third card : "+playercard2);
+				
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					System.out.println(e.getMessage());
+				}
+				
+				System.out.println("\n");
+					if (playercard2>bankercard) {
+						System.out.println("You Win");
+					}
+					else if (playercard2<bankercard) {
+						System.out.println("You Lose");
+					}
+					else if (playercard2==bankercard) {
+						System.out.println("Draw");
+					}
+			}
+			else if (playercard>5 && bankercard<=5) {
+				System.out.println("Banker draw card \n");
+				
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					System.out.println(e.getMessage());
+				}
+				
+				System.out.println("Banker's third card : "+bankercard2);
+				
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					System.out.println(e.getMessage());
+				}
+				
+				System.out.println("\n");
+					if (playercard>bankercard2) {
+						System.out.println("You Win");
+					}
+					else if (playercard<bankercard2) {
+						System.out.println("You Lose");
+					}
+					else if (playercard==bankercard2) {
+						System.out.println("Draw");
+					}
+			}
+			else if (playercard<=5 && bankercard<=5) {
+				System.out.println("Banker and Player draw card \n");
+				
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					System.out.println(e.getMessage());
+				}
+				
+				System.out.println("Player's third card : "+playercard2+"\n"+"Banker's third card : "+bankercard2);
+				
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					System.out.println(e.getMessage());
+				}
+				
+				System.out.println("\n");
+					if (playercard2>bankercard2) {
+						System.out.println("You Win");
+					}
+					else if (playercard2<bankercard2) {
+						System.out.println("You Lose");
+					}
+					else if (playercard2==bankercard2) {
+						System.out.println("Draw");
+					}
+			}
+			isT = false;
+						
+			}
+		return isT;
+		
+		
+	}
+```
+
+#### banker 측에서 게임 
+
+```
+	public boolean bankerPlay(int playercard, int playercard2, int bankercard, int bankercard2) {
+		boolean isT = true;				
+		while(isT) {
+			if (playercard>5 && bankercard>5) {
+				if (playercard>bankercard) {
+					System.out.println("You Lose\n");
+				}
+				else if (playercard<bankercard) {
+					System.out.println("You Win\n");
+				}
+				else if (playercard==bankercard) {
+					System.out.println("Draw\n");
+				}
+			}
+			
+			else if (playercard<=5 && bankercard>5) {
+				System.out.println("Player draw card \n");
+				
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					System.out.println(e.getMessage());
+				}
+				
+				System.out.println("Player's third card : "+playercard2);
+				
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					System.out.println(e.getMessage());
+				}
+				
+				System.out.println("\n");
+				if (playercard2>bankercard) {
+					System.out.println("You Lose\n");
+				}
+				else if (playercard2<bankercard) {
+					System.out.println("You Win\n");
+				}
+				else if (playercard2==bankercard) {
+					System.out.println("Draw\n");
+				}
+			}
+			else if (playercard>5 && bankercard<=5) {
+				System.out.println("Banker draw card \n");
+				
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					System.out.println(e.getMessage());
+				}
+				
+				System.out.println("Banker's third card : "+bankercard2);
+				
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					System.out.println(e.getMessage());
+				}
+				
+				System.out.println("\n");
+				if (playercard>bankercard2) {
+					System.out.println("You Lose\n");
+				}
+				else if (playercard<bankercard2) {
+					System.out.println("You Win\n");
+				}
+				else if (playercard==bankercard2) {
+					System.out.println("Draw\n");
+				}
+			}
+			else if (playercard<=5 && bankercard<=5) {
+				System.out.println("Banker and Player draw card \n");
+				
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					System.out.println(e.getMessage());
+				}
+				
+				System.out.println("Player's third card : "+playercard2+"\n"+"Banker's third card : "+bankercard2);
+				
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					System.out.println(e.getMessage());
+				}
+				
+				System.out.println("\n");
+				if (playercard2>bankercard2) {
+					System.out.println("You Lose\n");
+				}
+				else if (playercard2<bankercard2) {
+					System.out.println("You Win\n");
+				}
+				else if (playercard2==bankercard2) {
+					System.out.println("Draw\n");
+				}
+			}
+			isT = false;
+			
+		}
+		return isT;
+		
+		
+	}
+
+}
+```
+
 ----
 
 ### 결과
