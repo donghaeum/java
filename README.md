@@ -26,9 +26,11 @@
 
   - [생성자](https://github.com/donghaeum/java/wiki/%EC%83%9D%EC%84%B1%EC%9E%90)
 
+- [Class](https://github.com/donghaeum/java/wiki/Class)
+
 - [제어문](https://github.com/donghaeum/java/wiki/%EC%A0%9C%EC%96%B4%EB%AC%B8)
 
-  - [If 문](https://github.com/donghaeum/java/wiki/If)
+  - [If 문](https://github.com/donghaeum/java/wiki/If-%EB%AC%B8)
 
   - [for 문](https://github.com/donghaeum/java/wiki/for-%EB%AC%B8)
 
@@ -38,7 +40,7 @@
 
 - [자료형](https://github.com/donghaeum/java/wiki/자료형)
 
-  - [문자열](https://github.com/donghaeum/java/wiki/String)
+  - [문자열](https://github.com/donghaeum/java/wiki/%EB%AC%B8%EC%9E%90%EC%97%B4)
 
   - [배열](https://github.com/donghaeum/java/wiki/%EB%B0%B0%EC%97%B4)
 
@@ -48,16 +50,14 @@
 
 - [Package](https://github.com/donghaeum/java/wiki/Package)
 
-- [PBV, PBR](https://github.com/donghaeum/java/wiki/PBV,-PBR)
-
-- [Parameter, Argument](https://github.com/donghaeum/java/wiki/Parameter,-Argument)
-
-- [Access Modifier](https://github.com/donghaeum/java/wiki/Access-Modifier)
-
-- [member field](https://github.com/donghaeum/java/wiki/member-field)
-
-- [Class](https://github.com/donghaeum/java/wiki/Class)
+- [접근 제한자](https://github.com/donghaeum/java/wiki/%EC%A0%91%EA%B7%BC-%EC%A0%9C%ED%95%9C%EC%9E%90)
 
 - [메모리 4대 특징](https://github.com/donghaeum/java/wiki/%EB%A9%94%EB%AA%A8%EB%A6%AC-4%EB%8C%80-%ED%8A%B9%EC%A7%95)
 
+- [Copy](https://github.com/donghaeum/java/wiki/Copy)
 
+- [API](https://github.com/donghaeum/java/wiki/API)
+
+- [Jar](https://github.com/donghaeum/java/wiki/Jar)
+
+- [Static](https://github.com/donghaeum/java/wiki/Static)
