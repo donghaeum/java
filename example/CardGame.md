@@ -192,7 +192,7 @@ public class BaccaratCardGame {
 		
 		System.out.println("플레이어의 카드 합은 "+playerFirstSum+" 입니다.");  // player의 첫 번째와 두 번째 카드값의 합 출력
 		System.out.println("딜러의 카드 합은 "+bankerFirstSum+" 입니다. \n");  // banker의 첫 번째와 두 번째 카드값의 합 출력
-		System.out.println(player.gameStart(playerFirstSum, playerSecondSum, bankerFirstSum, bankerSecondSum));  // BacarratGameStart의 조건에 맞게 실행
+		player.gameStart(playerFirstSum, playerSecondSum, bankerFirstSum, bankerSecondSum);  // BacarratGameStart의 조건에 맞게 실행
 		}
 }
 ```
