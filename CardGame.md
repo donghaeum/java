@@ -141,3 +141,51 @@ public boolean gameStart(int playercard, int playercard2, int bankercard, int ba
 	return isT;	
 }
 ```
+
+- 게임 시작하기
+
+```
+public class BaccaratCardGame {
+	public static void main(String[] args) {		
+		BaccaratGameStart player = new BaccaratGameStart();
+		BaccaratGameStart banker = new BaccaratGameStart();
+		int playerFirstSum = 0;
+		int playerSecondSum = 0;
+		int bankerFirstSum = 0;
+		int bankerSecondSum = 0;
+		
+		System.out.println("-----------------------------------------------------");
+		System.out.println("\t \t 바카라 게임을 시작합니다.");
+		System.out.println("-----------------------------------------------------");
+		
+		System.out.println("카드를 뽑습니다 \n");
+		
+		for (int i = 0; i < 2; i++) {
+			if (i == 0) {
+				System.out.println("플레이어의 첫 번째 카드는 "+player.Cards(i)+" 입니다.");  // player가 뽑은 첫 번째 카드 출력
+			}
+			else if (i == 1) {
+				System.out.println("플레이어의 두번째 카드는 "+player.Cards(i)+" 입니다.");  // player가 뽑은 두 번째 카드 출력
+			}
+		}
+		System.out.println("\n");
+		for (int i = 0; i < 2; i++) {
+			if (i == 0) {
+				System.out.println("딜러의 첫 번째 카드는 "+banker.Cards(i)+" 입니다.");  // banker가 뽑은 첫 번째 카드 출력
+			}
+			else if (i == 1) {
+				System.out.println("딜러의 두번째 카드는 "+banker.Cards(i)+" 입니다.");  // banker가 뽑은 두 번째 카드 출력
+			}
+		}
+		System.out.println("\n");
+		playerFirstSum = player.getCardSum();
+		bankerFirstSum = banker.getCardSum();
+		playerSecondSum = player.getCardSum2();
+		bankerSecondSum = banker.getCardSum2();
+		
+		System.out.println("플레이어의 카드 합은 "+playerFirstSum+" 입니다.");  // player의 첫 번째와 두 번째 카드값의 합 출력
+		System.out.println("딜러의 카드 합은 "+bankerFirstSum+" 입니다. \n");  // banker의 첫 번째와 두 번째 카드값의 합 출력
+		System.out.println(player.gameStart(playerFirstSum, playerSecondSum, bankerFirstSum, bankerSecondSum));  // BacarratGameStart의 조건에 맞게 실행
+		}
+}
+```
