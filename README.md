@@ -50,8 +50,6 @@
 
   - [배열](https://github.com/donghaeum/java/wiki/%EB%B0%B0%EC%97%B4)
 
-    - [JCF](https://github.com/donghaeum/java/wiki/JCF)
-
   - [연산자](https://github.com/donghaeum/java/wiki/%EC%97%B0%EC%82%B0%EC%9E%90)
 
 - [상속](https://github.com/donghaeum/java/wiki/%EC%83%81%EC%86%8D)
